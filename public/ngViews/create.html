@@ -1,0 +1,26 @@
+<h1>admin: create blog post</h1>
+{{message}}
+<form ng-submit="createPost(title, content, tags)">
+    <input type="text" ng-model="title" placeholder="blog title">
+    <input type="text" ng-model="content" placeholder="content">
+    <input type="text" ng-model="tags" placeholder="tags">
+    <input type="submit" value="add post">
+</form>
+<hr>
+<h1>admin: create dog</h1>
+{{dogMessage}}
+<form ng-submit="createDog(dogName, dogNote, dogImg)">
+    <input type="text" ng-model="dogName" placeholder="dog name">
+    <input type="text" ng-model="dogNote" placeholder="dog notes">
+    <input type="text" ng-model="dogImg" placeholder="image url">
+    <input type="submit" value="add dog">
+</form>
+<hr>
+<h1>admin: create cat</h1>
+{{catMessage}}
+<form ng-submit="createCat(catName, catNote, catImg)">
+    <input type="text" ng-model="catName" placeholder="cat name">
+    <input type="text" ng-model="catNote" placeholder="cat notes">
+    <input type="text" ng-model="catImg" placeholder="image url">
+    <input type="submit" value="add cat">
+</form>

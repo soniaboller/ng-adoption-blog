@@ -1,0 +1,27 @@
+<h1>admin: remove posts</h1>
+
+<ul>
+    <li ng-repeat="blog in blogPosts">
+        {{blog.id}} || {{blog.title}} || <button ng-click="removeBlog(blog)">X</button>
+    </li>
+</ul>
+
+<hr>
+
+<h1>admin: remove dog</h1>
+
+<ul>
+    <li ng-repeat="dog in dogPosts">
+        {{dog.id}} || {{dog.name}} || <button ng-click="removeDog(dog)">X</button>
+    </li>
+</ul>
+
+<hr>
+
+<h1>admin: remove cat</h1>
+
+<ul>
+    <li ng-repeat="cat in catPosts">
+        {{cat.id}} || {{cat.name}} || <button ng-click="removeCat(cat)">X</button>
+    </li>
+</ul>

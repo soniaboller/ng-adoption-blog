@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="adoptionBlog">
+  <head>
+    <title>Blawwwgg</title>
+    <link rel='stylesheet' href='/styles/style.css' />
+    <script src="/scripts/angular.js" ></script>
+    <script src="/scripts/angular-route.min.js" ></script>
+    <script src="/scripts/app.js" ></script>
+    <script src="/scripts/app.PostsCtrl.js"></script>
+    <script src="/scripts/app.AdminCreateCtrl.js"></script>
+    <script src="/scripts/app.AdminDeleteCtrl.js"></script>
+    <script src="/scripts/app.CatsCtrl.js"></script>
+    <script src="/scripts/app.DogsCtrl.js"></script>
+  </head>
+  <body>
+
+  <header>
+    <img src="/images/logo.png" alt="Piano key necktie">
+    <hr>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/create">Add Post</a></li>
+      <li><a href="/cats">See Cats</a></li>
+      <li><a href="/dogs">See Dogs</a></li>
+    </ul>
+    <hr>
+  </header>
+
+  <!-- this is similar to yield/body in erb/hbs -->
+  <div ng-view></div>
+
+  <footer>
+    <hr>
+    &copy 2016 through Forever, the Mugato Empire!
+  </footer>
+
+  </body>
+</html>
